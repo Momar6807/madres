@@ -1,0 +1,60 @@
+
+img{
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+p{
+  text-shadow: 1px 1px 2px pink;
+}
+
+span{
+  text-shadow: 1px 1px 2px pink;
+}
+
+h3{
+    text-shadow: 1px 1px 2px pink;
+
+}
+
+nav{
+  height: 50px;
+  background-color: indianred;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding-bottom: 5px;
+  margin: 0.5rem;
+}
+
+
+
+#corazon {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  margin-top: 10px;
+}
+
+#corazon::before, #corazon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 52px;
+  height: 80px;
+  border-radius: 50px 50px 0 0;
+  background: red;
+}
+
+#corazon::before {
+  left: 50px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+#corazon::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
